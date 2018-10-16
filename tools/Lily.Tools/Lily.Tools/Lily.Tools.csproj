@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core.Extensions" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0-preview1-35029" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="IronTower\兴庆区基站信息\兴庆区基站信息（中心点）.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号10号  兴庆昆仑建材东640104908000000011\IMG_3099.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3051.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3053.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3054.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3055.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3068.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3069.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号16号   塔桥村2队640104908000000495\IMG_3070.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号29、30号  兴庆上前城康居北640104600000001588\IMG_3041.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号29、30号  兴庆上前城康居北640104600000001588\IMG_3042.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号29、30号  兴庆上前城康居北640104600000001588\IMG_3043.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号31号 兴庆区大新渠十站640104908000000395\IMG_3031.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号31号 兴庆区大新渠十站640104908000000395\IMG_3033.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号31号 兴庆区大新渠十站640104908000000395\IMG_3034.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号337号  宝丰职工安置区（红墩子2-联通）（64018101000028）\IMG_2940.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号337号  宝丰职工安置区（红墩子2-联通）（64018101000028）\IMG_2941.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号337号  宝丰职工安置区（红墩子2-联通）（64018101000028）\IMG_2942.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号342、343号  国际医疗城（640104500000000094）\IMG_2943.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号342、343号  国际医疗城（640104500000000094）\IMG_2944.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号342、343号  国际医疗城（640104500000000094）\IMG_2946.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号361号  地质工程学院南（640104500000000041）\IMG_2953.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号361号  地质工程学院南（640104500000000041）\IMG_2954.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号361号  地质工程学院南（640104500000000041）\IMG_2955.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号390、391号  兴庆颐园小区北区640104500000000123\IMG_3105.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号390、391号  兴庆颐园小区北区640104500000000123\IMG_3106.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="IronTower\兴庆区基站信息\基站照片\编号390、391号  兴庆颐园小区北区640104500000000123\IMG_3107.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

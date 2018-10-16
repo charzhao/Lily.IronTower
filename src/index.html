@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Gokulakrishnan Kalaikovan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="theme-color" content="#FFB300" />
+  <title>宁夏银川大兴区基站管理平台</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="manifest" href="./data/manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,medium&amp;lang=en" rel="stylesheet" type="text/css">
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+
+  <script src="https://cdn.bootcss.com/proj4js/2.4.3/proj4.js"></script>
+  <script src="https://cdn.bootcss.com/proj4leaflet/1.0.1/proj4leaflet.min.js"></script>
+
+  <script src="./js/tileLayer.baidu.js"></script>
+  <script src="./js/Info.js"></script>
+  <style>
+    .parent {
+      height: 500px;
+      position: relative;
+			border: 1px solid rgb(22, 20, 20);/***/
+			padding: 2px 2px;/***/
+    }
+    
+    table{
+       height: 200px;
+       width:400px;
+       border:2px solid  rgb(69, 82, 69);
+       background: #1d1b1b
+      }
+      td{
+          
+      }
+      
+      tbody tr:nth-child(2n+2){
+          background:#494242;
+          color: rgb(198, 203, 207)
+      }
+      tbody tr:nth-child(2n+1){
+         background:#353131;
+         color: rgb(198, 203, 207)
+        }
+      tbody tr:hover{background:rgb(133, 62, 62);}
+      table thead tr{
+        background: #0f0f0f;
+        color: rgb(198, 203, 207)
+      }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <!-- svg hamburger icon -->
+      <div class="menu__icon">
+        <svg width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- menu  -->
+  <nav class="menu">
+    <div class="parent">
+      <div class="menu__header wrapper">
+        <div class="cell">
+          坐落单位名称: <input type="text" id="query"><br>
+        </div>
+      </div>
+
+      <div id="search_list" class="search_list">
+        <div id="search_content" class="search_content">
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- overlay  -->
+  <div class="menu__overlay"></div>
+
+  <div id="map" style="width: 100%;height: 100%;"></div>
+
+
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/map.js"></script>
+  <script>
+    $(document).ready(function () {
+      Char.Map.Init();
+      Char.Map.Search1("");
+      $("div.parent").height($(document.body).height() - 154);
+      $("#tabList tr").click(function () {
+        var id = $(this).children('td').eq(0).text();
+        Char.Map.SetMapLocation(id);
+      });
+
+      $('#query').bind('input', function () {
+        
+        var filterText = $('#query').val();
+        Char.Map.Search1(filterText);
+        $("#tabList tr").click(function () {
+        var id = $(this).children('td').eq(0).text();
+        Char.Map.SetMapLocation(id);
+      });
+      });
+    })
+
+    $(window).resize(function () {
+      $("div.parent").height($(document.body).height() - 154)
+    });
+  </script>
+</body>
+
+</html>
